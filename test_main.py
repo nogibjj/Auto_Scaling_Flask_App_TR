@@ -4,7 +4,6 @@ Test goes here
 """
 import os
 from dotenv import load_dotenv
-import requests
 import openai
 
 
@@ -26,7 +25,7 @@ def test_openai_api():
     response = openai.ChatCompletion.create(
         model="gpt-3.5-turbo",  # Choose the engine based on your requirements
         messages=messages,
-        temperature=0
+        temperature=0,
     )
     assert response.choices[0].message["content"] is not None
 
