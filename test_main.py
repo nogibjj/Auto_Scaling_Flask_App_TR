@@ -7,6 +7,10 @@ from dotenv import load_dotenv
 import openai
 
 
+load_dotenv()
+openai.api_key = os.getenv("API_TOKEN")
+
+
 def test_html_files(directory="templates/"):
     """checks html files exists"""
     html_files = [f for f in os.listdir(directory) if f.endswith(".html")]
@@ -17,8 +21,6 @@ def test_html_files(directory="templates/"):
 
 
 def test_openai_api():
-    load_dotenv()
-    openai.api_key = os.getenv("API_TOKEN")
     """Checks OpenAI API with a prompt"""
     test_prompt = "The answer to the universe is?"
     messages = [{"role": "user", "content": test_prompt}]
