@@ -5,6 +5,7 @@
 
 
 
+
 1. First thing to do on launch is to open a new shell and verify virtualenv is sourced.
 
 Things included are:
