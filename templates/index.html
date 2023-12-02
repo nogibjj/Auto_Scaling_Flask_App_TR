@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AI bartender</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='bootstrap/css/bootstrap.min.css') }}">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='shaker.png') }}">
+    <script>
+        function validateForm() {
+            var prompt = document.getElementById("name").value.trim();
+
+            if (prompt === "") {
+                // Show the error message
+                document.getElementById("error-message").classList.remove("d-none");
+                return false;
+            }
+
+            // Hide the error message if it was shown previously
+            document.getElementById("error-message").classList.add("d-none");
+            return true;
+        }
+    </script>
+</head>
+<body>
+    <main>
+        <div class="px-4 py-3 my-2 text-center">
+            <!-- Image right after the title -->
+            <img width="200" height="200" src="https://img.icons8.com/external-linector-lineal-linector/64/external-bartender-career-avatar-linector-lineal-linector" alt="external-bartender-career-avatar-linector-lineal-linector"/>
+            
+            <h1 class="display-6 fw-bold text-primary">Customize your own cocktail with your AI bartender!</h1>            
+        </div>
+        <form method="post" action="{{ url_for('predict') }}" onsubmit="return validateForm()">
+            <div class="col-md-6 mx-auto text-center">
+                <label for="name" class="form-label fw-bold fs-5">Tell me what you have</label>
+
+                <div class="d-grid gap-2 d-sm-flex justify-content-sm-center align-items-center my-1">
+                    <!-- Use a textarea element instead of an input element -->
+                    <textarea class="form-control" id="name" name="prompt" style="max-width: 400px;" rows="5" autofocus></textarea>
+                </div>  
+
+                <!-- Error message for empty text box -->
+                <div id="error-message" class="alert alert-danger d-none" role="alert">
+                    Please enter something in the text box.
+                </div>            
+
+                <div class="d-grid gap-2 d-sm-flex justify-content-sm-center my-2">
+                    <button type="submit" class="btn btn-primary btn-lg px-4 gap-3">Cheers</button>
+                </div>            
+            </div>
+        </form>
+    </main>      
+</body>
+</html>
