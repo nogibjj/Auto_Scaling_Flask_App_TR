@@ -47,9 +47,9 @@ We deploy the container via Azure Web App to a public endpoint. The Docker image
 8. Use this app 
 
 ## Reference
-https://github.com/nogibjj/python-ruff-template
-https://stackoverflow.com/questions/72705471/how-to-reference-secrets-in-azure-container-apps
-https://learn.microsoft.com/en-us/azure/developer/python/tutorial-containerize-simple-web-app?tabs=web-app-flask
-https://learn.microsoft.com/en-us/azure/container-apps/scale-app?pivots=azure-cli
-https://openai.com/product
-https://openai.com/chatgpt
+- https://github.com/nogibjj/python-ruff-template
+- https://stackoverflow.com/questions/72705471/how-to-reference-secrets-in-azure-container-apps
+- https://learn.microsoft.com/en-us/azure/developer/python/tutorial-containerize-simple-web-app?tabs=web-app-flask
+- https://learn.microsoft.com/en-us/azure/container-apps/scale-app?pivots=azure-cli
+- https://openai.com/product
+- https://openai.com/chatgpt
