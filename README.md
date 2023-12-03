@@ -7,7 +7,7 @@ Tianji Rao
 [Bartender](https://aibartender.orangecliff-0f706743.westus2.azurecontainerapps.io/)
 
 ## Video
-
+[YouTube link](https://youtu.be/nrHcGgkP7wg)
 
 ## Overview
 In this project, we've developed a Flask application that incorporates OpenAI's powerful GPT-3.5. Our AI bartender is designed to assist you in crafting a personalized cocktail experience by taking into account your available ingredients, preferences, and any specific requirements you may have. This innovative system leverages the capabilities of GPT-3.5 from OpenAI to provide a tailored and engaging cocktail customization process.
