@@ -1,38 +1,55 @@
-[![CI](https://github.com/nogibjj/python-ruff-template/actions/workflows/cicd.yml/badge.svg)](https://github.com/nogibjj/python-ruff-template/actions/workflows/cicd.yml)
-## Template for Python projects with RUFF linter
+# Auto Scaling Flask App Using Any Serverless Platform
+[![CI](https://github.com/nogibjj/Auto_Scaling_Flask_App_TR/actions/workflows/cicd.yml/badge.svg)](https://github.com/nogibjj/Auto_Scaling_Flask_App_TR/actions/workflows/cicd.yml)
 
-![1 15_rust_built_python_tools](https://github.com/nogibjj/python-ruff-template/assets/58792/db5f7bda-a977-4c67-acbe-a70fe034fbdf)
+Tianji Rao
 
+## App
+[Bartender](https://aibartender.orangecliff-0f706743.westus2.azurecontainerapps.io/)
 
-
-
-1. First thing to do on launch is to open a new shell and verify virtualenv is sourced.
-
-Things included are:
-
-* `Makefile`
-
-* `Pytest`
-
-* `pandas`
-
-* `Ruff`:  
-
-Run `make lint` which runs `ruff check`.  You can find out more info on [Ruff here](https://github.com/astral-sh/ruff).
-
-* `Dockerfile`
-
-* `GitHub copilot`
-
-* `jupyter` and `ipython` 
-
-* A base set of libraries for devops and web
-
-* `githubactions`
-
-## References
-
-![1 1-function-essence-of-programming](https://github.com/nogibjj/python-ruff-template/assets/58792/f7f33cd3-cff5-4014-98ea-09b6a29c7557)
+## Video
 
 
+## Overview
+In this project, we've developed a Flask application that incorporates OpenAI's powerful GPT-3.5. Our AI bartender is designed to assist you in crafting a personalized cocktail experience by taking into account your available ingredients, preferences, and any specific requirements you may have. This innovative system leverages the capabilities of GPT-3.5 from OpenAI to provide a tailored and engaging cocktail customization process.
 
+## Introduction
+1. Flask App
+In the `main.py`, we design routes for the index page, result page, and a predict endpoint. In the index page, users can specify their requirements in the chatbox. When they finish writing and press the button, they will be moved to the result page where the AI bartender can provide a detailed recipe.
+
+2. HTML templates
+We design two HTML templates for UI:
+- `index.html`: home page
+- `result.html`: result page
+
+3. OpenAI ChatGPT 
+The application interfaces with the ChatGPT 3.5 via OpenAI API. It can send a special designed prompt to the LLM and  capture results.
+
+4. Docker Containerization
+A docker file is included in this repo to containerize the Flask app
+
+5. Azure Container Apps
+We deploy the container via Azure Web App to a public endpoint. The Docker image is hosted on Azure Container Registry. The functioning container is hosted on DockerHub.
+
+
+## Format, Lint, and Test
+- format: `make format`
+- lint: `make lint`
+- test: `make test`
+
+## Preparation
+1. Clone this repo
+2. Install required packages using `make install`
+3. Get openai API and save it to the env file
+4. Run main.py locally and test the functionality
+5. Build docker image
+6. Login to Azure CLI
+7. Deploy azure web app
+8. Use this app 
+
+## Reference
+https://github.com/nogibjj/python-ruff-template
+https://stackoverflow.com/questions/72705471/how-to-reference-secrets-in-azure-container-apps
+https://learn.microsoft.com/en-us/azure/developer/python/tutorial-containerize-simple-web-app?tabs=web-app-flask
+https://learn.microsoft.com/en-us/azure/container-apps/scale-app?pivots=azure-cli
+https://openai.com/product
+https://openai.com/chatgpt
