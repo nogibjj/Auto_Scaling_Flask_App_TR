@@ -30,6 +30,11 @@ A docker file is included in this repo to containerize the Flask app
 5. Azure Container Apps
 We deploy the container via Azure Web App to a public endpoint. The Docker image is hosted on Azure Container Registry. The functioning container is hosted on DockerHub.
 
+## Deploy with Docker and Azure
+<img width="763" alt="Screenshot 2023-12-06 at 11 24 21 PM" src="https://github.com/nogibjj/Auto_Scaling_Flask_App_TR/assets/104114843/209dec66-ca69-4a94-8800-8b673cacfb10">
+
+<img width="1351" alt="Screenshot 2023-12-06 at 11 11 54 PM" src="https://github.com/nogibjj/Auto_Scaling_Flask_App_TR/assets/104114843/e2957829-2663-498a-a886-a6d4ea233283">
+
 
 ## Format, Lint, and Test
 - format: `make format`
