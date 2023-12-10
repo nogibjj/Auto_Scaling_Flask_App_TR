@@ -47,8 +47,6 @@ To manage high demand, the app automatically launches additional instances, up t
 
 <img width="1351" alt="Screenshot 2023-12-06 at 11 11 54 PM" src="https://github.com/nogibjj/Auto_Scaling_Flask_App_TR/assets/104114843/e2957829-2663-498a-a886-a6d4ea233283">
 
->>>>>>> 896adfc93556a86ed51c2a75330e701b4f17d057
-
 ## Format, Lint, and Test
 - format: `make format`
 - lint: `make lint`
